@@ -18,46 +18,99 @@ function BarraMenu() {
         item.addEventListener('click', activeLink))
     }, 1)
 
+    function botao1() {
+        document.getElementById('n2').style.display = 'none'
+        document.getElementById('n3').style.display = 'none'
+        document.getElementById('n4').style.display = 'none'
+        document.getElementById('n5').style.display = 'none'
+        
+        document.getElementById('n1').style.display = 'block'
+    }
+
+    function botao2() {
+        document.getElementById('n1').style.display = 'none'
+        document.getElementById('n3').style.display = 'none'
+        document.getElementById('n4').style.display = 'none'
+        document.getElementById('n5').style.display = 'none'
+        
+        document.getElementById('n2').style.display = 'block'
+    }
+
+    function botao3() {
+        document.getElementById('n1').style.display = 'none'
+        document.getElementById('n2').style.display = 'none'
+        document.getElementById('n4').style.display = 'none'
+        document.getElementById('n5').style.display = 'none'
+        
+        document.getElementById('n3').style.display = 'block'
+    }
+
+    function botao4() {
+        document.getElementById('n1').style.display = 'none'
+        document.getElementById('n2').style.display = 'none'
+        document.getElementById('n3').style.display = 'none'
+        document.getElementById('n5').style.display = 'none'
+        
+        document.getElementById('n4').style.display = 'block'
+    }
+
+    function botao5() {
+        document.getElementById('n1').style.display = 'none'
+        document.getElementById('n2').style.display = 'none'
+        document.getElementById('n3').style.display = 'none'
+        document.getElementById('n4').style.display = 'none'
+        
+        document.getElementById('n5').style.display = 'block'
+    }
+
+
+
     return (
         <div class="navigation">
         <div class="menuToggle"></div>
         <ul>
-            <li class="list active">
-                <a href="#" id="n1">
+            <li class="list active" id="corNav1" onClick={botao1}>
+                <a href="#" >
                     <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                     <span class="text">Home</span>
                 </a>
             </li>
 
-            <li class="list" id="n2">
+            <li class="list" id="corNav2" onClick={botao2}>
                 <a href="#">
                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                     <span class="text">About</span>
                 </a>
             </li>
 
-            <li class="list" id="n3">
+            <li class="list" id="corNav3" onClick={botao3}>
                 <a href="#">
                     <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                     <span class="text">Messages</span>
                 </a>
             </li>
 
-            <li class="list" id="n4">
+            <li class="list" id="corNav4" onClick={botao4}>
                 <a href="#">
                     <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
                     <span class="text">Photos</span>
                 </a>
             </li>
 
-            <li class="list" id="n5">
+            <li class="list" id="corNav5" onClick={botao5}>
                 <a href="#">
                     <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
                     <span class="text">Settings</span>
                 </a>
             </li>
         </ul>
+
+         
     </div>
+
+
+
+   
     )
 }
 
