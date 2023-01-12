@@ -216,24 +216,69 @@ body {
     color: #fff;
 }
 
-#n1 {
+#corNav1 {
     --clr:#f44336;
 }
 
-#n2 {
+#corNav2 {
     --clr:#ffa117;
 }
 
-#n3 {
+#corNav3 {
     --clr:#0fc70f;
 }
 
-#n4 {
+#corNav4 {
     --clr:#2196f3;
 }
 
-#n5 {
+#corNav5 {
     --clr:#b145e9;
 }
 
-                                            /* MENU BARRA LATERAL TERMINA AKI */
+                                            /* MENU BARRA LATERAL TERMINA AKI *
+
+
+
+
+                                            
+/* AQUI COMEÇA A ESTILIZAÇÃO DAS DIVS */
+
+
+.todasDivs {
+    background-color: #fff;
+    position: absolute;
+    width: 75%;
+    top: 5%;
+    left: 19%;
+}
+
+
+#n1{
+    background-color:#fff;
+}
+
+#n2{
+   display: none;
+   color: #2196f3;
+   background-color:#fff ;
+
+}
+
+#n3{
+    display: none;
+    color: #f44336;
+    background-color:#fff ;
+}
+
+#n4{
+   display: none;
+   color: aqua;
+   background-color:#fff ;
+}
+
+#n5{
+   display: none;
+   color: #b145e9;
+   background-color:#fff ;
+}
