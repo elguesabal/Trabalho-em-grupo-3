@@ -1,5 +1,5 @@
                                             /* MENU BARRA LATERAL COMECA AKI */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
@@ -15,7 +15,7 @@
 
 body {
     min-height: 100vh;
-    background: var(--bg);
+    background: #c7cdfa;
 }
 
 .navigation {
@@ -95,7 +95,7 @@ body {
 
 .navigation ul li.active {
     transform: translateX(30px);
-    background: var(--bg);
+    background: #c7cdfa;
 }
 
 .navigation ul li::before {
@@ -107,7 +107,7 @@ body {
     height: 20px;
     background: transparent;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 5px 0 5px var(--bg);
+    box-shadow: 6px 5px 0 5px #c7cdfa;
     transform: scale(0);
     transform-origin: bottom right;
     transition: 0.5s;
@@ -127,7 +127,7 @@ body {
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 6px -3px 0 3px var(--bg);
+    box-shadow: 6px -3px 0 3px #c7cdfa;
     transform: scale(0);
     transform-origin: bottom right;
     transition: 0.5s;
@@ -191,7 +191,7 @@ body {
     width: 15px;
     height: 15px;
     background: var(--clr);
-    border: 8px solid var(--bg);
+    border: 8px solid #c7cdfa;
     border-radius: 50%;
 }
 
@@ -281,4 +281,346 @@ body {
    display: none;
    color: #b145e9;
    background-color:#fff ;
+}
+
+/* CSS FORMULARIO (EDUARDA) */
+.corpo {
+    margin: 0;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c7cdfa;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #aaf5ae;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.box2 {
+    margin-top: 5%;
+    position: relative;
+    width: 380px;
+    height: 1150px;
+    background: #aaf5ae;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box2::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent,#45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box2::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #c7cdfa;
+    z-index: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    color:   rgb(255, 0, 255);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 1;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 30px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 0, 255);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputBox input:valid ~ i, .inputBox input:focus ~ i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover, .links a:nth-child(2) {
+    color: #45f3ff;
+}
+
+.botão {
+    border: none;
+    outline: none;
+    background: rgb(255, 0, 255);
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.duda:active {
+    opacity: 0.8;
+}
+
+#corpo2{
+  display: none;
+}
+
+/* CSS PARA LOGO ABAIXO (EDUARDA) */
+
+.corpoLogo {
+    top: 15%;
+    left: 87%;
+    z-index: 2;
+    position: absolute;
+}
+
+.containerLogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    width: 180px;
+    height: 180px;
+    border: 0px solid #011015;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ring:nth-child(1) {
+    border-bottom-width: 8px;
+    border-color: rgb(255, 0, 255);
+    animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2) {
+    border-right-width: 8px;
+    border-color: rgb(0, 255, 255);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3) {
+    border-top-width: 8px;
+    border-color: rgb(0, 255, 0);
+    animation: rotate3 2s linear infinite;
+}
+
+.loading {
+    font-size: 70%;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 0 0.2em rgb(235, 235, 235), 0 0 0.2em rgb(158, 158, 158);
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/* CSS PARA A BOAS VINDAS (EDUARDA) */
+.box3 {
+    position: relative;
+    width: 800px;
+    height: 420px;
+    background: #aaf5ae;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box3::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 800px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box3::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 800px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.text{
+    color: rgb(71, 6, 44);
+    font-size: 500px;
+}
+
+.form2 {
+    color: #45f3ff;
+    position: absolute;
+    inset: 4px;
+    border-radius: 8px;
+    background: #c7cdfa;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.welcometext1{
+    padding: 50px;
+    color: beige;
+    text-decoration: underline rgb(255, 0, 255);
+    font-size: 70px;
+}
+
+.welcometext2{
+    color: beige;
+    text-decoration: underline rgb(255, 0, 255);
+    font-size: 40px;
 }

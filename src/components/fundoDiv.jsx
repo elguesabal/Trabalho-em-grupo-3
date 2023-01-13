@@ -1,10 +1,12 @@
+import Welcome from './Welcome'
+import Form from './form'
 function Divs() {
 
     return (
         <div id="movimentaDivs">
 
             <div id="n1" class="todasDivs">
-                <p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p>
+                <Form />
             </div>
 
             <div id="n2" class="todasDivs">
