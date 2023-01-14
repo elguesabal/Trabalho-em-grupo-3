@@ -242,8 +242,7 @@ body {
 
 
                                             
-/* AQUI COMEÇA A ESTILIZAÇÃO DAS DIVS */
-
+/* AQUI COMEÇA A ESTILIZAÇÃO DAS DIVS (PAINEL Q EXIBE O CONTEUDO DO MENU LATERAL) */
 
 .todasDivs {
     background-color: #fff;
@@ -282,6 +281,9 @@ body {
    color: #b145e9;
    background-color:#fff ;
 }
+
+/* AQUI TERMINA A ESTILIZAÇÃO DAS DIVS (PAINEL Q EXIBE O CONTEUDO DO MENU LATERAL) */
+
 
 /* CSS FORMULARIO (EDUARDA) */
 .corpo {
@@ -481,9 +483,10 @@ body {
 #corpo2{
   display: none;
 }
+/* CSS FORMULARIO (EDUARDA) */
+
 
 /* CSS PARA LOGO ABAIXO (EDUARDA) */
-
 .corpoLogo {
     top: 15%;
     left: 87%;
@@ -559,6 +562,8 @@ body {
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
 }
+/* CSS PARA LOGO EM CIMA (EDUARDA) */
+
 
 /* CSS PARA A BOAS VINDAS (EDUARDA) */
 .box3 {
@@ -595,10 +600,10 @@ body {
     animation-delay: -3s;
 }
 
-.text{
+/* .text{           A EDUARDA COLOCOU ESSE CODIGO SO PRA FUDE COM O TRABALHO KKK
     color: rgb(71, 6, 44);
     font-size: 500px;
-}
+} */
 
 .form2 {
     color: #45f3ff;
@@ -624,3 +629,4 @@ body {
     text-decoration: underline rgb(255, 0, 255);
     font-size: 40px;
 }
+/* CSS PARA A BOAS VINDAS (EDUARDA) */
