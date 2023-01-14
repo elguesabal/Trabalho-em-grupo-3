@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    z-index: 99;
 }
 
 .navigation.active {
@@ -95,7 +96,7 @@ body {
 
 .navigation ul li.active {
     transform: translateX(30px);
-    background: #c7cdfa;
+    background: #bdc5ff;
 }
 
 .navigation ul li::before {
@@ -107,7 +108,7 @@ body {
     height: 20px;
     background: transparent;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 5px 0 5px #c7cdfa;
+    box-shadow: 6px 5px 0 5px #c7cdfa00;
     transform: scale(0);
     transform-origin: bottom right;
     transition: 0.5s;
@@ -127,7 +128,7 @@ body {
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 6px -3px 0 3px #c7cdfa;
+    box-shadow: 6px -3px 0 3px #c7cdfa00;
     transform: scale(0);
     transform-origin: bottom right;
     transition: 0.5s;
