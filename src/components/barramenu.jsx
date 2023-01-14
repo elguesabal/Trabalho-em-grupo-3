@@ -1,6 +1,15 @@
+            // AKI ESTOU IMPORTANDO OS BOTOES DA BARRA LATERAL JA COM SUA RESPECTIVAS FUNCOES
+import BotaoLogin from "./botoes/botao login/botaoLogin";
+import BotaoProdutos from "./botoes/botao pagina de produtos/botaoPaginaProdutos";
+import BotaoPaginaAdicionarProduto from "./botoes/botao de novos produtos/botaoPaginaAdicionarProduto";
+import BotaoColaboradores from "./botoes/botao colaboradores/botaoColaboradores";
+import BotaoRodape from "./botoes/botao rodape/botaoRodape";
+            // AKI ESTOU IMPORTANDO OS BOTOES DA BARRA LATERAL JA COM SUA RESPECTIVAS FUNCOES
+
+
 function BarraMenu() {
     
-                                                // COMECA AKI ANIMACAO DA BARRA LATERAL
+                                // COMECA AKI ANIMACAO DA BARRA LATERAL
     setTimeout( function() {
         let menuToggle = document.querySelector('.menuToggle');
         let navigation = document.querySelector('.navigation');
@@ -18,18 +27,7 @@ function BarraMenu() {
         list.forEach((item) => 
         item.addEventListener('click', activeLink))
     }, 1)
-                                                // TERMINA AKI ANIMACAO DA BARRA LATERAL
-
-
-                                                // COMECA AKI A TROCA DE PAGINAS
-    function meteNoneBlock(akiEntraIdDiv) {
-        for (let i = 1; i < 6; i++) {
-            document.getElementById(`n${i}`).style.display = 'none'
-        }
-        document.getElementById(akiEntraIdDiv).style.display = 'block'
-    }
-                                                // TERMINA AKI A TROCA DE PAGINAS
-
+                                // TERMINA AKI ANIMACAO DA BARRA LATERAL
 
     return (
         <div class="navigation">
@@ -37,40 +35,15 @@ function BarraMenu() {
             <div class="menuToggle"></div>
             
             <ul>
-                <li class="list active" id="corNav1" onClick={() => meteNoneBlock('n1')}>
-                    <a href="#" >
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="text">Home</span>
-                    </a>
-                </li>
+                <BotaoLogin />
 
-                <li class="list" id="corNav2" onClick={() => meteNoneBlock('n2')}>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="text">About</span>
-                    </a>
-                </li>
+                <BotaoProdutos />
 
-                <li class="list" id="corNav3" onClick={() => meteNoneBlock('n3')}>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                        <span class="text">Messages</span>
-                    </a>
-                </li>
+                <BotaoPaginaAdicionarProduto />
 
-                <li class="list" id="corNav4" onClick={() => meteNoneBlock('n4')}>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
-                        <span class="text">Photos</span>
-                    </a>
-                </li>
+                <BotaoColaboradores />
 
-                <li class="list" id="corNav5" onClick={() => meteNoneBlock('n5')}>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                        <span class="text">Settings</span>
-                    </a>
-                </li>
+                <BotaoRodape />
             </ul>
 
         </div>   

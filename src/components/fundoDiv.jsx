@@ -1,28 +1,34 @@
-import Welcome from './Welcome'
-import Form from './form'
+            // AKI ESTOU IMPORTANDO OQ SERA EXIBIDO EM CADA PAINEL
+import PaginaLogin from './paineis/pagina login/paginaLogin'
+import PaginaProdutos from './paineis/pagina produtos/paginaProdutos'
+import PaginaAdicionarProduto from './paineis/pagina novos produtos/paginaAdicionarProduto'
+import PaginaColaboradores from './paineis/pagina colaboradores/paginaColaboradores'
+import PaginaRodape from './paineis/pagina rodape/paginaRodape'
+            // AKI ESTOU IMPORTANDO OQ SERA EXIBIDO EM CADA PAINEL
+
 function Divs() {
 
     return (
         <div id="movimentaDivs">
 
             <div id="n1" class="todasDivs">
-                <Form />
+                <PaginaLogin />
             </div>
 
             <div id="n2" class="todasDivs">
-                <p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p>
+                <PaginaProdutos />
             </div>
 
-            <div id="n3" class="todasDivs"> 
-                <p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</ p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p>
+            <div id="n3" class="todasDivs">
+                <PaginaAdicionarProduto />
             </div>
 
             <div id="n4" class="todasDivs">
-                <p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p>
+                <PaginaColaboradores />
             </div>
 
             <div id="n5" class="todasDivs">
-                <p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p><p>sadf</p>
+                <PaginaRodape />
             </div>
             
         </div>
