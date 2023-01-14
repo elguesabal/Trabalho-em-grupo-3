@@ -1,4 +1,5 @@
 import login from "./requisicaoLogin";
+import cadastro from "./requisicaoCadastro";
 
 function PaginaLogin() {
     function mudar() {
@@ -36,21 +37,23 @@ function PaginaLogin() {
         }
     }
 
-    function Enviar(inputemail) {
-        var nome = document.getElementById("inputnome");
+    // function Enviar(inputemail) {                TEMPORARIAMENTE DESATIVADO
+    //     var nome = document.getElementById("inputnome");
 
-        if (
-            nome != "" &&
-            validacaoEmail(inputemail)
-        ) {
-            alert(
-                nome.value +
-                " os seus dados foram encaminhados com sucesso"
-            );
-        } else {
-            alert("Verifique se todos os campos foram preenchidos corretamente.");
-        }
-    }
+    //     if (
+    //         nome != "" &&
+    //         validacaoEmail(inputemail)
+    //     ) {
+    //         alert(
+    //             nome.value +
+    //             " os seus dados foram encaminhados com sucesso"
+    //         );
+    //     } else {
+    //         alert("Verifique se todos os campos foram preenchidos corretamente.");
+    //     }
+    // }
+
+
 
     return (
         <div>
@@ -157,8 +160,8 @@ function PaginaLogin() {
                             <a onClick={() => mudar2()} href="#">Fazer login</a>
                         </div>
 
-                        <button id="botaoenviar" onClick={() => Enviar()} value="Enviar" class="botão">
-                            CRIAR
+                        <button id="botaoenviar" onClick={() => cadastro()} value="Enviar" class="botão">   
+                            CRIAR      {/* RETIREI O Enviar() PQ ESTAVA DANDO ERRO NO cadastro() QUANDO CLICKAVA */}
                         </button>
                     </div>
                 </div>
