@@ -1,3 +1,5 @@
+import login from "./requisicaoLogin";
+
 function PaginaLogin() {
     function mudar() {
         document.getElementById("corpo2").style.display = "flex";
@@ -78,7 +80,7 @@ function PaginaLogin() {
                                 Cadastre-se
                             </a>
                         </div>
-                        <button id="botaologin" class="botão">
+                        <button id="botaologin" class="botão" onClick={() => login()}>
                             LOGIN
                         </button>
                     </div>
