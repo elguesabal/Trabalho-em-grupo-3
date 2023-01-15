@@ -2,6 +2,7 @@ import BarraMenu from './components/barramenu.jsx'
 import Divs from './components/fundoDiv.jsx'
 import Logo from './components/Logo copy'
 
+import Load from './components/Load.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <BarraMenu/>
       <Divs/>
       <Logo/>
+      <Load/>
     </div>
   )
 }

@@ -566,6 +566,24 @@ body {
 /* CSS PARA LOGO EM CIMA (EDUARDA) */
 
 
+/* COMECA AKI COMPLEMENTO PARA FAZER A TELA DE LOAD BASEADO NA LOGO */
+.corpoLoad {
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    position: absolute;
+}
+#logoLoad {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.658);
+    display: none;
+    z-index: 9999999;
+}
+/* TERMINA AKI COMPLEMENTO PARA FAZER A TELA DE LOAD BASEADO NA LOGO */
+
+
 /* CSS PARA A BOAS VINDAS (EDUARDA) */
 .box3 {
     position: relative;
