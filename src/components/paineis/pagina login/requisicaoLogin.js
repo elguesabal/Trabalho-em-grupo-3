@@ -1,6 +1,9 @@
 import url from "../../url";
 
 function login() {
+    const load = document.getElementById('logoLoad')
+    load.style.display = 'flex'
+
     let usuario = document.getElementById('loginome').value
     let senha = document.getElementById('loginsenha').value
 
@@ -24,6 +27,8 @@ function login() {
                 }
             })
         }
+
+        load.style.display = 'none'
     })
     .catch(erro => alert('nao deu certo'))
 }

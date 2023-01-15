@@ -1,6 +1,9 @@
 import url from "../../url";
 
 async function cadastro() {
+    const load = document.getElementById('logoLoad')
+    load.style.display = 'flex'
+    
     let novoUsuario = document.getElementById('inputnome').value
     let novaSenha = document.getElementById('inputsenha').value
     let farmacia = document.getElementById('inputnomefarmacia').value
@@ -41,6 +44,8 @@ async function cadastro() {
         } else {
             alert('usuario ja existente')
         }
+
+        load.style.display = 'none'
     })
     .catch(erro => alert('aconteceu algum erro'))
 }
