@@ -1,6 +1,7 @@
                                             /* MENU BARRA LATERAL COMECA AKI */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500');
 
 * {
     margin: 0;
@@ -649,3 +650,118 @@ body {
     font-size: 40px;
 }
 /* CSS PARA A BOAS VINDAS (EDUARDA) */
+
+
+/* INICIO DO CSS DOS CARDS (ERICK) */
+.containerColaboradores {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .containerColaboradores .cardsColaboradores {
+    position: relative;
+    width: 300px;
+    height: 460px;
+    background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+    margin: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+ }
+
+ .containerColaboradores .cardsColaboradores .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000000;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+ }
+
+ .containerColaboradores .cardsColaboradores:hover .imgBx {
+    transform: translateY(30px) scale(0.5);
+ }
+
+ .containerColaboradores .cardsColaboradores .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .containerColaboradores .cardsColaboradores .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5;
+ }
+
+ .containerColaboradores .cardsColaboradores:hover .content {
+    transform: translateY(0);
+ }
+
+ .containerColaboradores .cardsColaboradores .content .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ .containerColaboradores .cardsColaboradores .content .details h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+ }
+
+ .containerColaboradores .cardsColaboradores .content .details h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #03a9f4;
+ }
+
+ .social_icons {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+ }
+
+ .social_icons li {
+    list-style: none;
+    margin: 4px;
+ }
+
+ .social_icons li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294d69;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+
+ .social_icons li a:hover {
+    transform: rotate(360deg);
+    background: #03a9f4;
+ }
+ /* FINAL DO CSS DOS CARDS (ERICK) */
