@@ -127,7 +127,7 @@ function PaginaLogin() {
                         </div>
                         <div class="inputBox">
                             <span>CEP</span>
-                            <input id="cep" type="text" required="required" size="10" maxlength="8"></input>
+                            <input id="cep" type="number" required="required" size="10" maxlength="8"></input>
                             <i></i>
                         </div>
                         <div class="inputBox">
@@ -142,7 +142,8 @@ function PaginaLogin() {
                         </div>
                         <div class="inputBox">
                             <span>Número</span>
-                            <input id="inputnumero" type="text" required="required"></input>
+                            <input id="inputnumero" type="number"
+                                minLength="0" required="required"></input>
                             <i></i>
                         </div>
                         <div class="inputBox">
