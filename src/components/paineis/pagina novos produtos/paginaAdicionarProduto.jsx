@@ -18,7 +18,7 @@ function PaginaAdicionarProduto() {
                             <span>Quantidade</span>
                             <input
                                 id="quantidadeproduto"
-                                type="password"
+                                type="text"
                                 required="required"
                             ></input>
                             <i></i>
@@ -27,7 +27,7 @@ function PaginaAdicionarProduto() {
                             <span>Link da imagem </span>
                             <input
                                 id="imagemlink"
-                                type="password"
+                                type="text"
                                 required="required"
                             ></input>
                             <i></i>
