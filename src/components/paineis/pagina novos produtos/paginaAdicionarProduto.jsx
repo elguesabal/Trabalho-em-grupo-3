@@ -19,7 +19,7 @@ function PaginaAdicionarProduto() {
                             <input
                                 id="quantidadeproduto"
                                 type="number"
-                                minLength="0"
+                                min="0"
                                 required="required"
                             ></input>
                             <i></i>
