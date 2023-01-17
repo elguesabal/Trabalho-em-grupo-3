@@ -22,8 +22,26 @@ function login() {
                 const produtos = resposta.data[user].produtos.map((produtos) => produtos.produto)
                 
                 for (let i = 0; i < produtos.length; i++) {
-                    console.log(resposta.data[user].produtos[i].produto)
-                    console.log(resposta.data[user].produtos[i].valor)
+                    document.getElementById('grid').innerHTML += 
+                    `<div class="card">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src=""/>
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <div class="estoque">
+                                    <h2>${resposta.data[user].produtos[i].produto}</h2>
+                                    <p>Estoque: ${resposta.data[user].produtos[i].valor}</p>
+                                </div>
+                                <br/>
+                                <input type="number" min="0"/>
+                            
+                                <a>Atualizar quantidade</a>
+                                <ion-icon class="lixo" name="trash-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>`
                 }
             })
         }
