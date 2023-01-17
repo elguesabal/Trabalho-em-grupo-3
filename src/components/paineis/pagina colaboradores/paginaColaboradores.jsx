@@ -6,7 +6,7 @@ function PaginaColaboradores() {
 
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/Eduarda.jpeg"/>
+                        <img src="./public/Eduarda.jpeg"/>
                     </div>
 
                     <div class="content">
@@ -27,7 +27,7 @@ function PaginaColaboradores() {
 
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/José.jpeg"/>
+                        <img src="./public/José.jpeg"/>
                     </div>
 
                     <div class="content">
@@ -45,7 +45,7 @@ function PaginaColaboradores() {
 
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/Bruno.jfif"/>
+                        <img src="./public/Bruno.jfif"/>
                     </div>
 
                     <div class="content">
@@ -64,7 +64,7 @@ function PaginaColaboradores() {
         
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/Leonardo.jpeg"/>
+                        <img src="./public/Leonardo.jpeg"/>
                     </div>
 
                     <div class="content">
@@ -82,7 +82,7 @@ function PaginaColaboradores() {
 
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/Diego.jpeg"/>
+                        <img src="./public/Diego.jpeg"/>
                     </div>
         
                     <div class="content">
@@ -101,7 +101,7 @@ function PaginaColaboradores() {
 
                 <div class="cardsColaboradores">
                     <div class="imgBx">
-                        <img src="./img/Erick.jpeg"/>
+                        <img src="./public/Erick.jpeg"/>
                     </div>
 
                     <div class="content">
