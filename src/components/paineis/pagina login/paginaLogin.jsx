@@ -101,7 +101,7 @@ function PaginaLogin() {
                             <input id="inputnome" type="text" required="required"></input>
                             <i></i>
                         </div>
-
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Senha</span>
                             <input
@@ -111,6 +111,7 @@ function PaginaLogin() {
                             ></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Nome da farmácia</span>
                             <input
@@ -120,43 +121,50 @@ function PaginaLogin() {
                             ></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Email para contato</span>
                             <input id="inputemail" type="text" required="required"></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>CEP</span>
-                            <input id="cep" type="number" required="required" size="10" maxlength="8"></input>
+                            <input id="cep" type="number" required="required"></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Bairro da unidade</span>
                             <input id="inputbairro" type="text" required="required"></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Rua</span>
-                            <input id="rua" type="text" required="required"></input>
+                            <input id="rua" type="number" required="required"></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Número</span>
                             <input id="inputnumero" type="number"
-                                minLength="0" required="required"></input>
-                            <i></i>
+                             required="required"></input>
+                            <i></i>  
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Estado</span>
                             <input id="UF" type="text" required="required"></input>
                             <i></i>
                         </div>
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="inputBox">
                             <span>Cidade</span>
                             <input id="cidade" type="text" required="required"></input>
                             <i></i>
                         </div>
-
+                        <p class="mensagemerro" id="mensagemerro"></p>
                         <div class="links">
                             <a onClick={() => mudar2()} href="#">Fazer login</a>
                         </div>
