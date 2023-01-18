@@ -37,8 +37,11 @@ async function cadastro() {
 
             axios.post(url + 'dados', 
             {
-                id: ''
-            })
+                id: "",
+                produtos: [
+
+                ]
+              })
             .then(resposta => alert('ja pode inserir novos produtos'))
             .catch(erro => alert('aconteceu algum erro'))
         } else {
