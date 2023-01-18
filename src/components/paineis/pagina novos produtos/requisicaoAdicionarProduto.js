@@ -7,7 +7,6 @@ async function adicionarProduto() {
     axios.get(url + 'usuario')
     .then(resposta => {
         const user = resposta.data.map((data) => data.login).indexOf(usuario)
-        const userId = resposta.data[user].id
 
         axios.get(url + 'dados')
         .then(resposta => {
@@ -24,13 +23,13 @@ async function adicionarProduto() {
                             produtos: arrayProdutos
                         }
 
-            axios.put(url + 'dados/' + userId, arrayFinal)
+            axios.put(url + 'dados/' + user, arrayFinal)
             .then(resposta => alert('item adicionado'))
             .catch(erro => alert('nao faz sentido'))
         })
-        .catch(erro => alert('ta aki'))
+        .catch(erro => alert(erro))
     })
-    .catch(erro => alert('oxi deu erro'))
+    .catch(erro => alert(erro))
 }
 
 export default adicionarProduto
