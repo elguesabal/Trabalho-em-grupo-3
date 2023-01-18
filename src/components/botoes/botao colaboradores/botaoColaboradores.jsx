@@ -5,8 +5,8 @@ function BotaoColaboradores() {
     return(
         <li class="list" id="corNav4" onClick={() => meteNoneBlock('n4')}>
             <a href="#">
-                <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
-                <span class="text">Photos</span>
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <span class="text">Colaboradores</span>
             </a>
         </li>
     )
