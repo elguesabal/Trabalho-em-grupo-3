@@ -86,7 +86,7 @@ function PaginaLogin() {
                 Cadastre-se
               </a>
             </div>
-            <button id="botaologin" class="botão" onClick={() => mudar3()}>
+            <button id="botaologin" class="botão" onClick={() => {login(), mudar3()}}>
               LOGIN
             </button>
           </div>
@@ -167,7 +167,7 @@ function PaginaLogin() {
             </div>
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="links">
-              <a onClick={() => mudar2()} href="#">
+              <a onClick={() => {mudar2(), cadastro()}} href="#">
                 Fazer login
               </a>
             </div>
@@ -191,10 +191,10 @@ function PaginaLogin() {
               <h2 class="welcometext1">Bem-vindo </h2>
               <h2 class="welcometext2">ao seu estoque!</h2>
               <div class="botoes">
-              <button id="botaologin" class="botão1">
+              <button id="botaologin2" class="botão1">
                 Sair
               </button>
-              <button id="botaologin" class="botão2">
+              <button id="botaologin3" class="botão2">
                 Deletar usuario
               </button>
               </div>
