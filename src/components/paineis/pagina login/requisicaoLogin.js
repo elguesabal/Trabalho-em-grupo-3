@@ -1,4 +1,7 @@
 import url from "../../url";
+import atualizarEstoque from "../pagina produtos/requisicaoAtualizaEstoque";
+
+            // TA DANDO ERRO AO CHAMAR A FUNCAO atualizaEstoque()
 
 function login() {
     const load = document.getElementById('logoLoad')
@@ -40,7 +43,7 @@ function login() {
                             <div class="face face2">
                                 <div class="content">
 
-                                                                <div class="divInv" id="CARD${i}>${i}</div>
+                                                                <div class="divInv" id="CARD${i}">${i}</div>
         
                                     <p class="descricaoProdutos">${resposta.data[user].produtos[i].produto}</p>
         
@@ -51,11 +54,11 @@ function login() {
         
                                     <div class="botoesReq">
                                         <label for="atuzaliar" class="estilizarLabel">Atualizar Produtos:</label>
-                                        <input type="number" class="inputNumb" name="atualizar"/>
+                                        <input type="number" id="atualizarEstoque${i}" class="inputNumb" name="atualizar"/>
                                     </div>
         
                                     <div>
-                                        <button>Atualizar</button>
+                                        <button onClick={() => atualizarEstoque(${i})}>Atualizar</button>
                                         <ion-icon class="lixeira" name="trash-outline" title="Excluir Produto"></ion-icon>
                                     </div>
         
