@@ -26,9 +26,9 @@ async function adicionarProduto() {
 
             axios.put(url + 'dados/' + userId, arrayFinal)
             .then(resposta => alert('item adicionado'))
-            .catch(erro => alert(erro))
-
+            .catch(erro => alert('nao faz sentido'))
         })
+        .catch(erro => alert('ta aki'))
     })
     .catch(erro => alert(erro))
 }
