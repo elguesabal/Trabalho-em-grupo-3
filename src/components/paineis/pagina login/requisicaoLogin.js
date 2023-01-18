@@ -27,7 +27,7 @@ function login() {
 
                     document.getElementById('gridProdutos').innerHTML += 
 
-                    `<div class="containerProdutos" id="card${i}">
+                    `<div class="containerProdutos"">
                         <div class="cardProdutos">
         
                             <div class="face face1">
@@ -37,9 +37,10 @@ function login() {
                                 </div>
                             </div>
         
-        
                             <div class="face face2">
                                 <div class="content">
+
+                                                                <div class="divInv" id="CARD${i}>${i}</div>
         
                                     <p class="descricaoProdutos">${resposta.data[user].produtos[i].produto}</p>
         
@@ -50,7 +51,7 @@ function login() {
         
                                     <div class="botoesReq">
                                         <label for="atuzaliar" class="estilizarLabel">Atualizar Produtos:</label>
-                                        <input type="number" class="inputNumb" name="atualizar" />
+                                        <input type="number" class="inputNumb" name="atualizar"/>
                                     </div>
         
                                     <div>
