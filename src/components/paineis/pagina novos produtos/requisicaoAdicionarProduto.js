@@ -30,7 +30,7 @@ async function adicionarProduto() {
         })
         .catch(erro => alert('ta aki'))
     })
-    .catch(erro => alert(erro))
+    .catch(erro => alert('oxi deu erro'))
 }
 
 export default adicionarProduto
