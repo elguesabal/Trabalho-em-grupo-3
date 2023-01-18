@@ -37,7 +37,7 @@ async function cadastro() {
 
             axios.post(url + 'dados', 
             {
-                id: "",
+                id: '',
                 produtos: [
 
                 ]
