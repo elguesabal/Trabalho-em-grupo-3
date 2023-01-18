@@ -20,26 +20,47 @@ function login() {
             axios.get(url + 'dados')
             .then(resposta => {
                 const produtos = resposta.data[user].produtos.map((produtos) => produtos.produto)
+
+                document.getElementById('gridProdutos').innerHTML = ''
                 
                 for (let i = 0; i < produtos.length; i++) {
-                    document.getElementById('grid').innerHTML += 
-                    `<div class="card">
-                        <div class="lines"></div>
-                        <div class="imgBx">
-                            <img src=""/>
-                        </div>
-                        <div class="content">
-                            <div class="details">
-                                <div class="estoque">
-                                    <h2>${resposta.data[user].produtos[i].produto}</h2>
-                                    <p>Estoque: ${resposta.data[user].produtos[i].valor}</p>
+
+                    document.getElementById('gridProdutos').innerHTML += 
+
+                    `<div class="containerProdutos" id="card${i}">
+                        <div class="cardProdutos">
+        
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="${resposta.data[user].produtos[i].imagem}" />
+                                    <h3>${resposta.data[user].produtos[i].produto}</h3>
                                 </div>
-                                <br/>
-                                <input type="number" min="0"/>
-                            
-                                <a>Atualizar quantidade</a>
-                                <ion-icon class="lixo" name="trash-outline"></ion-icon>
                             </div>
+        
+        
+                            <div class="face face2">
+                                <div class="content">
+        
+                                    <p class="descricaoProdutos">${resposta.data[user].produtos[i].produto}</p>
+        
+                                    <div class="estoqueAtual">
+                                        <label for="estoque" class="estilizarLabel">Estoque Atual:</label>
+                                        <p class="moverP" name="estoque">${resposta.data[user].produtos[i].quantidade}</p>
+                                    </div>
+        
+                                    <div class="botoesReq">
+                                        <label for="atuzaliar" class="estilizarLabel">Atualizar Produtos:</label>
+                                        <input type="number" class="inputNumb" name="atualizar" />
+                                    </div>
+        
+                                    <div>
+                                        <button>Atualizar</button>
+                                        <ion-icon class="lixeira" name="trash-outline" title="Excluir Produto"></ion-icon>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
                         </div>
                     </div>`
                 }
