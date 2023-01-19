@@ -12,7 +12,7 @@ async function atualizarEstoque() {
         axios.get(url + 'dados')
         .then(resposta => {
             let novaQuantidade = document.getElementById('novaQuantidade').value
-            let numeroDoCard = document.getElementById('numeroDoCard').value
+            let numeroDoCard = document.getElementById('numeroDoCard').value - 1
 
             let arrayProdutos = resposta.data[user].produtos
             let todosProdutos = resposta.data[user].produtos
