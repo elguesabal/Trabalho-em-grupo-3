@@ -43,7 +43,7 @@ function login() {
                             <div class="face face2">
                                 <div class="content">
 
-                                    <p>Número do card: ${i}</>
+                                    <p>Número do card: ${i + 1}</>
         
                                     <p class="descricaoProdutos">${resposta.data[user].produtos[i].produto}</p>
         
