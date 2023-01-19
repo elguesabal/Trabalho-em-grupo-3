@@ -1,8 +1,9 @@
 import url from "../../url"
 
-            // TA DANDO ERRO AO CHAMAR A FUNCAO atualizaEstoque()
 
-async function atualizarEstoque(numeroDoCard) {
+async function atualizarEstoque() {
+    let usuario = document.getElementById('loginome').value
+
     axios.get(url + 'usuario')
     .then(resposta => {
         const user = resposta.data.map((data) => data.login).indexOf(usuario)
@@ -10,7 +11,8 @@ async function atualizarEstoque(numeroDoCard) {
 
         axios.get(url + 'dados')
         .then(resposta => {
-            let novaQuantidade = document.getElementById('atualizarEstoque' + numeroDoCard).value
+            let novaQuantidade = document.getElementById('novaQuantidade').value
+            let numeroDoCard = document.getElementById('numeroDoCard').value
 
             let arrayProdutos = resposta.data[user].produtos
             let todosProdutos = resposta.data[user].produtos
@@ -30,12 +32,12 @@ async function atualizarEstoque(numeroDoCard) {
             }
 
             axios.put(url + 'dados/' + userId, arrayFinal)
-            .then(resposta => console.log('estoque atualizado'))
-            .catch(erro => console.log('nao faz sentido'))
+            .then(resposta => alert('estoque atualizado'))
+            .catch(erro => alert('nao faz sentido'))
         })
-        .catch(erro => console.log('ta aki'))
+        .catch(erro => alert('ta aki'))
     })
-    .catch(erro => console.log('oxi deu erro'))
+    .catch(erro => alert('oxi deu erro'))
 }
 
 export default atualizarEstoque
