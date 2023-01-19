@@ -43,23 +43,13 @@ function login() {
                             <div class="face face2">
                                 <div class="content">
 
-                                                                <div class="divInv" id="CARD${i}">${i}</div>
+                                    <p>Número do card: ${i}</>
         
                                     <p class="descricaoProdutos">${resposta.data[user].produtos[i].produto}</p>
         
                                     <div class="estoqueAtual">
                                         <label for="estoque" class="estilizarLabel">Estoque Atual:</label>
                                         <p class="moverP" name="estoque">${resposta.data[user].produtos[i].quantidade}</p>
-                                    </div>
-        
-                                    <div class="botoesReq">
-                                        <label for="atuzaliar" class="estilizarLabel">Atualizar Produtos:</label>
-                                        <input type="number" id="atualizarEstoque${i}" class="inputNumb" name="atualizar"/>
-                                    </div>
-        
-                                    <div>
-                                        <button onClick={() => atualizarEstoque(${i})}>Atualizar</button>
-                                        <ion-icon class="lixeira" name="trash-outline" title="Excluir Produto"></ion-icon>
                                     </div>
         
                                 </div>
