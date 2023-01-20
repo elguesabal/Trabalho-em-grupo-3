@@ -247,7 +247,6 @@ body {
 /* AQUI COMEÇA A ESTILIZAÇÃO DAS DIVS (PAINEL Q EXIBE O CONTEUDO DO MENU LATERAL) */
 
 .todasDivs {
-    background-color: #fff;
     position: absolute;
     width: 75%;
     top: 5%;
@@ -255,32 +254,21 @@ body {
 }
 
 
-#n1{
-    background-color:#fff;
-}
 
 #n2{
    display: none;
-   background-color:#fff ;
-
 }
 
 #n3{
     display: none;
-    color: #f44336;
-    background-color:#fff ;
 }
 
 #n4{
    display: none;
-   color: aqua;
-   background-color:#fff ;
 }
 
 #n5{
    display: none;
-   color: #b145e9;
-   background-color:#fff ;
 }
 
 /* AQUI TERMINA A ESTILIZAÇÃO DAS DIVS (PAINEL Q EXIBE O CONTEUDO DO MENU LATERAL) */
@@ -945,3 +933,183 @@ body {
     color: white;
 }
  /* fim da estilização da pagina boas vindas*/
+
+
+
+ /* Estilização da mensagem de aviso */
+
+
+
+
+ .avisoCuidadooo{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 450px;
+    width: 650px;
+    background-color: #fff;
+    border: 2px solid  rgb(255, 0, 255);
+    color: #272d53;
+    border-radius: 20px;
+
+    transition-timing-function: ease;
+    transition-duration: 1s;
+  }
+
+  .avisoCuidadooo div + div{
+    margin-top: 30px;
+  }
+
+ .iconeDeAviso{
+    height: 170px;
+    width: 170px;
+  }
+
+  .avisoCuidadooo h1{
+    font-size: 40px;
+  }
+
+  .pDeAviso{
+    font-size: 20px;
+    text-align: center;
+  }
+/* Fim do aviso */
+
+
+
+
+ /* estilização e movimentaçao dos botoes de excluir e adicionar (Bruno) */
+
+ #adicionarRequisicao{
+    position: fixed;
+    display: none;
+    bottom: 5%;
+    left: 67%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 15px;
+    height: 260px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid  rgb(172, 167, 167);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.200);
+    color: #272d53;
+    border-radius: 25px;
+ }
+
+ #excluirRequisicao{
+    position: fixed;
+    display: none;
+    bottom: 5%;
+    left: 67%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 15px;
+    height: 260px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid  rgb(172, 167, 167);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.200);
+    color: #272d53;
+    border-radius: 25px;
+
+ }
+ 
+ 
+ #adicionarRequisicao h1{
+    color: #00b100;
+ }
+
+
+ #excluirRequisicao h1{
+    margin-bottom: 10px;
+    color: rgb(179, 0, 0);
+ }
+ 
+
+.inputRequisicao{
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 60px;
+}
+
+#novaQuantidade{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+
+#botaoRequisicao{
+    background-color:  #c7cdfa4d;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 33px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#botaoRequisicao:hover{
+    background-color:  #c7cdfa;
+}
+
+.lixeira2{
+    margin-top: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+#botaoAtualizar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.150);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    bottom: 2%;
+    left: 95%;
+    cursor: pointer;
+}
+
+#botaoAtualizar:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+#botaoAtualizar ion-icon {
+    width: 70%;
+    height: 70%;
+    margin-top: 14%;
+    margin-left: 15%;
+}
+
+#botaoDelete {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.150);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    bottom: 11%;
+    left: 95%;
+    cursor: pointer;
+}
+
+#botaoDelete:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+#botaoDelete ion-icon {
+    width: 70%;
+    height: 70%;
+    margin-top: 14%;
+    margin-left: 15%;
+}
+
+
+
+/* Fim da estilização dos botoes */
