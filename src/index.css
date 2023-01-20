@@ -1113,3 +1113,46 @@ body {
 
 
 /* Fim da estilização dos botoes */
+
+
+
+
+ /* Estilização da mensagem de validaca */
+ .avisoValidacao{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+    height: 70%;
+    width: 27%;
+    background-color: #fff;
+    border: 2px solid  rgb(255, 0, 255);
+    color: #272d53;
+    border-radius: 20px;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    left: 72%;
+    top: 22%;
+  }
+
+  .avisoValidacao div + div{
+    margin-top: 30px;
+  }
+
+ .iconeDeValidacao{
+    height: 100px;
+    width: 100px;
+  }
+
+  #validacao{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .textoValidacao {
+    font-size: 15px;
+    color: red;
+  }
+ /* Estilização da mensagem de validaca */
