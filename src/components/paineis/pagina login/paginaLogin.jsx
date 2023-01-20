@@ -1,26 +1,9 @@
 import login from "./requisicaoLogin";
 import AvisoValidacao from "./avisoValidacao";
 import validacao from "./validacaoCadastro";
+import logout from "./logout";
 
 function PaginaLogin() {
-  function mudar() {
-    document.getElementById("corpo2").style.display = "flex";
-    // mudar display none no css
-    document.getElementById("corpo1").style.display = "none";
-  }
-  function mudar2() {
-    document.getElementById("corpo1").style.display = "flex";
-    // mudar display none no css
-    document.getElementById("corpo2").style.display = "none";
-  }
-  function mudar3() {
-    document.getElementById("corpoW").style.display = "flex";
-    // mudar display none no css
-    document.getElementById("corpo1").style.display = "none";
-  }
-
-
-
 
   return (
     <div>
@@ -37,20 +20,17 @@ function PaginaLogin() {
 
             <div class="inputBox">
               <span>Senha</span>
-              <input
-                id="loginsenha"
-                type="password"
-                required="required"
-              ></input>
+              <input id="loginsenha" type="password" required="required"></input>
               <i></i>
             </div>
 
             <div class="links">
-              <a onClick={() => mudar()} href="#">
+              <a onClick={() => {document.getElementById("corpo2").style.display = "flex"; document.getElementById("corpo1").style.display = "none";}} href="#">
                 Cadastre-se
               </a>
             </div>
-            <button id="botaologin" class="botão" onClick={() => {login(), mudar3()}}>
+            <p id="loginSenhaErrada"></p>
+            <button id="botaologin" class="botão" onClick={() => {login()}}>
               LOGIN
             </button>
           </div>
@@ -138,15 +118,14 @@ function PaginaLogin() {
 
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="links">
-              <a onClick={() => {mudar2()}} href="#">
+              <a onClick={() => {document.getElementById("corpo1").style.display = "flex"; document.getElementById("corpo2").style.display = "none";}} href="#">
                 Fazer login
               </a>
             </div>
 
 
             <button id="botaoenviar" onClick={() => validacao()} value="Enviar" class="botão">
-              CRIAR{" "}
-              {/* RETIREI O Enviar() PQ ESTAVA DANDO ERRO NO cadastro() QUANDO CLICKAVA */}
+              CRIAR
             </button>
 
           </div>
@@ -159,7 +138,7 @@ function PaginaLogin() {
               <h2 class="welcometext1">Bem-vindo </h2>
               <h2 class="welcometext2">ao seu estoque!</h2>
               <div class="botoes">
-              <button id="botaologin2" class="botão1">
+              <button id="botaologin2" class="botão1" onClick={() => logout()}>
                 Sair
               </button>
               <button id="botaologin3" class="botão2">

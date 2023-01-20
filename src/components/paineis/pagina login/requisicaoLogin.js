@@ -15,14 +15,19 @@ function login() {
         const user = resposta.data.map((data) => data.login).indexOf(usuario)
 
         if (user == -1 || resposta.data[user].senha !== senha) {
-            alert('login ou senha errada')
+            document.getElementById('loginSenhaErrada').textContent = 'Login ou senha errada'
             
         } else {
-            alert('login feito com sucesso')
-
             axios.get(url + 'dados')
             .then(resposta => {
                 const produtos = resposta.data[user].produtos.map((produtos) => produtos.produto)
+
+                document.getElementById('loginSenhaErrada').textContent = ''
+
+                document.getElementById("corpoW").style.display = "flex";
+                document.getElementById("corpo1").style.display = "none";
+
+                document.querySelector('.avisoCuidadooo').style.display = 'none'
 
                 document.getElementById('gridProdutos').innerHTML = ''
                 
