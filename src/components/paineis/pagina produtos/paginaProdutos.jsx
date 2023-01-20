@@ -1,35 +1,19 @@
-import atualizarEstoque from "./requisicaoAtualizaEstoque"
+import Aviso from "./aviso"
+import BotaoAdicionar from "./botaoAdicionar"
+import BotaoExcluir from "./botaoExcluir"
+
 
 function PaginaProdutos() {
+    
 
     return (
+
         <div id="PegaGrid">
 
-            <div>
-
-                <div>
-
-                    <span>Numero do card com novo estoque:</span>
-                    <input id="numeroDoCard" type="number" min="0"/>
-                    <br/>
-                    <span>Novo estoque:</span>
-                    <input id="novaQuantidade" type="number" min="0"/>
-                    <br/>
-                    <button onClick={() => atualizarEstoque()}>Atualizar</button>
-
-                </div>
-
-                <div>
-
-                    <span>Numero do card para excluir:</span>
-                    <input type="number" min="0"/>
-                    <ion-icon name="trash-outline"></ion-icon>
-
-                </div>
-
-            </div>
-
-
+            
+            <Aviso/>
+            <BotaoAdicionar />
+            <BotaoExcluir />
 
 
             <div id="gridProdutos">
