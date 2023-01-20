@@ -1,5 +1,6 @@
 import login from "./requisicaoLogin";
-import cadastro from "./requisicaoCadastro";
+import AvisoValidacao from "./avisoValidacao";
+import validacao from "./validacaoCadastro";
 
 function PaginaLogin() {
   function mudar() {
@@ -18,45 +19,8 @@ function PaginaLogin() {
     document.getElementById("corpo1").style.display = "none";
   }
 
-  function validacaoEmail(field) {
-    usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(
-      field.value.indexOf("@") + 1,
-      field.value.length
-    );
 
-    if (
-      usuario.length >= 1 &&
-      dominio.length >= 3 &&
-      usuario.search("@") == -1 &&
-      dominio.search("@") == -1 &&
-      usuario.search(" ") == -1 &&
-      dominio.search(" ") == -1 &&
-      dominio.search(".") != -1 &&
-      dominio.indexOf(".") >= 1 &&
-      dominio.lastIndexOf(".") < dominio.length - 1
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 
-  // function Enviar(inputemail) {                TEMPORARIAMENTE DESATIVADO
-  //     var nome = document.getElementById("inputnome");
-
-  //     if (
-  //         nome != "" &&
-  //         validacaoEmail(inputemail)
-  //     ) {
-  //         alert(
-  //             nome.value +
-  //             " os seus dados foram encaminhados com sucesso"
-  //         );
-  //     } else {
-  //         alert("Verifique se todos os campos foram preenchidos corretamente.");
-  //     }
-  // }
 
   return (
     <div>
@@ -93,94 +57,98 @@ function PaginaLogin() {
         </div>
       </div>
 
+
+
       <div class="corpo" id="corpo2">
         <div class="box2">
           <div class="form">
             <h2>Cadastre-se</h2>
+
 
             <div class="inputBox">
               <span>Escolha um nome de usuário</span>
               <input id="inputnome" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Senha</span>
-              <input
-                id="inputsenha"
-                type="password"
-                required="required"
-              ></input>
+              <input id="inputsenha" type="password" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Nome da farmácia</span>
-              <input
-                id="inputnomefarmacia"
-                type="text"
-                required="required"
-              ></input>
+              <input id="inputnomefarmacia" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Email para contato</span>
               <input id="inputemail" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>CEP</span>
-              <input id="cep" type="number" required="required"></input>
+              <input id="cep" required="required"></input>
               <i></i>
             </div>
+            <span htmlFor="">Não sabe o cep? </span><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Clique aqui!</a>
+
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Bairro da unidade</span>
               <input id="inputbairro" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
-              <span>Rua</span>
-              <input id="rua" type="number" required="required"></input>
+              <span>logradouro</span>
+              <input id="rua" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Número</span>
               <input id="inputnumero" type="number" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Estado</span>
               <input id="UF" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="inputBox">
               <span>Cidade</span>
               <input id="cidade" type="text" required="required"></input>
               <i></i>
             </div>
+
             <p class="mensagemerro" id="mensagemerro"></p>
             <div class="links">
-              <a onClick={() => {mudar2(), cadastro()}} href="#">
+              <a onClick={() => {mudar2()}} href="#">
                 Fazer login
               </a>
             </div>
 
-            <button
-              id="botaoenviar"
-              onClick={() => mudar2()}
-              value="Enviar"
-              class="botão"
-            >
+
+            <button id="botaoenviar" onClick={() => validacao()} value="Enviar" class="botão">
               CRIAR{" "}
               {/* RETIREI O Enviar() PQ ESTAVA DANDO ERRO NO cadastro() QUANDO CLICKAVA */}
             </button>
+
           </div>
         </div>
       </div>
@@ -202,6 +170,9 @@ function PaginaLogin() {
           </div>
         </div>
       </div>
+
+      <AvisoValidacao />
+
     </div>
   );
 }
