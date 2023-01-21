@@ -937,10 +937,6 @@ body {
 
 
  /* Estilização da mensagem de aviso */
-
-
-
-
  .avisoCuidadooo{
     margin-left: 20px;
     display: flex;
@@ -998,6 +994,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.200);
     color: #272d53;
     border-radius: 25px;
+    z-index: 10;
  }
 
  #excluirRequisicao{
@@ -1015,7 +1012,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.200);
     color: #272d53;
     border-radius: 25px;
-
+    z-index: 10;
  }
  
  
@@ -1110,7 +1107,20 @@ body {
     margin-left: 15%;
 }
 
+.fechar {
+    position: fixed;
+    left: 92%;
+    top: 56%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
 
+.fechar:hover {
+    background-color: rgb(129, 129, 129);
+    transition: 1s;
+}
 
 /* Fim da estilização dos botoes */
 
