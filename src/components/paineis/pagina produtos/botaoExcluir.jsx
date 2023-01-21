@@ -1,3 +1,5 @@
+import excluirProduto from "./requisicaoExcluirProduto"
+
 function BotaoExcluir() {
 
     return (
@@ -18,14 +20,12 @@ function BotaoExcluir() {
 
                     <div>
                         <span class="moverSpan">Numero do card para excluir:</span>
-                        <input class="inputRequisicao" type="number" min="0" />
-
-
+                        <input id="numeroDoCard" class="inputRequisicao" type="number" min="0" />
                     </div>
 
                     <div>
 
-                        <ion-icon class="lixeira2" name="trash-outline"></ion-icon>
+                        <ion-icon class="lixeira2" name="trash-outline" onClick={() => excluirProduto()}></ion-icon>
 
                     </div>
 
