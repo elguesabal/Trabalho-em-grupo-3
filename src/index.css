@@ -287,6 +287,10 @@ body {
     background: #c7cdfa;
 }
 
+#containerNovoProduto {
+    display: none;
+}
+
 .box {
     position: relative;
     width: 380px;
