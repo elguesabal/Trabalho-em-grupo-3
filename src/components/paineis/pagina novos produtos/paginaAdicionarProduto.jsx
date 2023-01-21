@@ -1,11 +1,14 @@
 import adicionarProduto from "./requisicaoAdicionarProduto"
+import AvisoNovosProdutos from "./avisoNovosProdutos"
 
 function PaginaAdicionarProduto() {
 
     return(
         <div>
 
-             <div class="corpo" id="corpo1">
+            <AvisoNovosProdutos />
+
+             <div class="corpo" id="containerNovoProduto">
                 <div class="box">
                     <div class="form">
                         <h2>Novo produto</h2>
