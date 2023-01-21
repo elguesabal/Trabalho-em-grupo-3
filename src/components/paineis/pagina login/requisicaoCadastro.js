@@ -32,7 +32,7 @@ async function cadastro() {
                 estado: estado,
                 cidade: cidade
             })
-            .then(resposta => alert('novo usuario criado'))
+            .then(resposta => console.log('usuario criado com sucesso'))
             .catch(erro => alert('aconteceu algum erro'))
 
             axios.post(url + 'dados', 
@@ -42,10 +42,14 @@ async function cadastro() {
 
                 ]
               })
-            .then(resposta => alert('ja pode inserir novos produtos'))
+            .then(resposta => {
+                document.getElementById('corpo2').style.display = 'none',
+                document.getElementById('corpo1').style.display = 'flex'
+            })
             .catch(erro => alert('aconteceu algum erro'))
         } else {
-            alert('usuario ja existente')
+            document.querySelector('.avisoValidacao').style.display = 'flex'
+            document.getElementById('validacao').textContent = 'Este usuário já existe!'
         }
 
         load.style.display = 'none'

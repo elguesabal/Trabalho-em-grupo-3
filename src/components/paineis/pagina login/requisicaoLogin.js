@@ -28,6 +28,9 @@ function login() {
                 document.getElementById("corpo1").style.display = "none";
 
                 document.querySelector('.avisoCuidadooo').style.display = 'none'
+                document.getElementById('NovosProdutos').style.display = 'none'
+
+                document.getElementById('containerNovoProduto').style.display = 'flex'
 
                 document.getElementById('gridProdutos').innerHTML = ''
                 
@@ -63,6 +66,7 @@ function login() {
                         </div>
                     </div>`
                 }
+
             })
         }
 

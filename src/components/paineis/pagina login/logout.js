@@ -16,6 +16,12 @@ function logout() {
     document.getElementById('gridProdutos').textContent = ''
     // PAGINA DE PRODUTO
 
+    // PAGINA DE NOVOS PRODUTO
+    document.getElementById('containerNovoProduto').style.display = 'none'
+    document.getElementById('NovosProdutos').style.display = 'flex'
+    // PAGINA DE NOVOS PRODUTO
+    
+
     setTimeout( function() {
         document.getElementById('logoLoad').style.display = 'none'
     }, 500)
