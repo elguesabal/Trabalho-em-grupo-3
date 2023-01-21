@@ -1,34 +1,15 @@
-import atualizarEstoque from "./requisicaoAtualizaEstoque"
-
-
-
 function BotaoExcluir() {
-
-    const divExcluir = document.getElementById("excluirRequisicao")
-
-
-    function mostrarExcluir(){
-        
-        if(divExcluir.style.display == "none"){
-
-            divExcluir.style.display = "block"
-
-        } else {
-            divExcluir.style.display = "none"
-        }
-    }
-
 
     return (
 
         <div>
 
+            <div id="botaoDelete" onClick={() => {document.getElementById("adicionarRequisicao").style.display = "none" ,document.getElementById("excluirRequisicao").style.display = 'block'}}><ion-icon name="trash-outline"></ion-icon></div>
 
-            <div id="botaoDelete" onClick={mostrarExcluir}><ion-icon name="trash-outline"></ion-icon></div>
 
             <div id="excluirRequisicao">
 
-
+                <ion-icon class="fechar" name="close-outline" onClick={() => document.getElementById("excluirRequisicao").style.display = "none"}></ion-icon>
 
                 <div>
 
@@ -51,13 +32,7 @@ function BotaoExcluir() {
 
                 </div>
 
-
-
             </div>
-
-
-
-
 
         </div>
 

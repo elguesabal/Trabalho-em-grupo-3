@@ -1,27 +1,17 @@
 import atualizarEstoque from "./requisicaoAtualizaEstoque"
 
+
 function BotaoAdicionar() {
-
-    const divAtualizar = document.getElementById("adicionarRequisicao")
-
-    function mostrarAtualizar(){
-        
-        if(divAtualizar.style.display == "none"){
-            
-            divAtualizar.style.display = "block"
-        } else{
-            divAtualizar.style.display = "none"
-        }
-    }
-
 
     return (
 
         <div>
 
-            <div id="botaoAtualizar" onClick={mostrarAtualizar}><ion-icon name="refresh-outline"></ion-icon></div>
+            <div id="botaoAtualizar" onClick={() =>{document.getElementById("excluirRequisicao").style.display = "none", document.getElementById("adicionarRequisicao").style.display = "block"}}><ion-icon name="refresh-outline"></ion-icon></div>
 
             <div id="adicionarRequisicao">
+
+                <ion-icon class="fechar" name="close-outline" onClick={() => document.getElementById("adicionarRequisicao").style.display = "none"}></ion-icon>
 
                 <div>
 
