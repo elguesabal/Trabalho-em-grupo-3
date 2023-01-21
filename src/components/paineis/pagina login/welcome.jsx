@@ -1,4 +1,5 @@
 import logout from "./logout";
+import deletarUsuario from "./requisicaoDeletarUsuario";
 
 function Welcome() {
     
@@ -12,7 +13,7 @@ function Welcome() {
 
                         <div class="botoes">
                             <button id="botaologin2" class="botão1" onClick={() => logout()}>Sair</button>
-                            <button id="botaologin3" class="botão2">Deletar usuario</button>
+                            <button id="botaologin3" class="botão2" onClick={() => deletarUsuario()}>Deletar usuario</button>
                         </div>
                     </div>
                 </div>
