@@ -9,12 +9,12 @@ function Aviso() {
                     </div>
 
                     <div>
-                        <h1>Comunicado importante!</h1>
+                        <h1>Faça login primeiro!</h1>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <p class="pDeAviso">Caso seus produtos não estejam aparecendo, efetue o login novamente! Se o erro permanecer, entre em contato com a equipe de suporte.</p>
-                    </div>
+                    </div> */}
 
                 </div>
         
