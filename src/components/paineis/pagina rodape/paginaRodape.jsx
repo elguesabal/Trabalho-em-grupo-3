@@ -10,7 +10,7 @@ function PaginaRodape() {
 
                         <div class="inputBox">
                             <span>Digite seu email:</span>
-                            <input id="loginome" type="text" required="required"></input>
+                            <input id="emailfeedback" type="text" required="required"></input>
                             <i></i>
                         </div>
 
