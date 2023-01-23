@@ -1228,15 +1228,20 @@ body {
     cursor: pointer;
     color: white;
 }
+
+#corpoRodape {
+    position: absolute;
+    left: 74%;
+}
 /* FORMULARIO DE FEED BACK PAG RODAPE FIM */
 
 /* css para o canvas */
 
 .canva{
     position: relative; 
-    width: 100%; 
+    width: 40%;
     height: 0; 
-    padding-top: 75.0000%;
+    padding-top: 30%;
     padding-bottom: 0;
     box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
     margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -1255,3 +1260,18 @@ body {
 }
 
 /* FIM css para o canvas */ 
+
+
+/* BOTOES REDE SOCIAIS */
+.redesSocias {
+    background-color: #00b100;
+    width: 0;
+    height: 0;
+    margin: 2%;
+}
+
+.iconRedeSocial {
+    width: 50px;
+    height: 50px;
+}
+/* BOTOES REDE SOCIAIS */
