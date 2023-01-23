@@ -17,7 +17,7 @@ function PaginaRodape() {
                         <div class="inputBox">
                             <textarea placeholder="digite sua mensagem..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button  class="botão2" >
+                        <button  class="botão3" >
                         Enviar
                         </button>
                     </div>
