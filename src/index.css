@@ -1190,35 +1190,11 @@ body {
     position: relative;
     width: 380px;
     height: 480px;
-    background: #aaf5ae;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.box4::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-}
 
-.box4::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
-}
 
 .botão3 {
     border: none;
@@ -1279,14 +1255,14 @@ body {
 .iconRedeSocial {
     width: 50px;
     height: 50px;
-    background-color: #b8b8b8;
-    border-radius: 20%;
+    background-color: #b8b8b800;
+    border-radius: 30%;
     color: rgb(255, 0, 255);
 }
 
 .iconRedeSocial:hover {
-    background-color: #505050;
-    box-shadow: 7px 2px #011015;
+    background-color: #ffffff;
+    box-shadow: 7px 2px 5px #011015;
 }
 /* BOTOES REDE SOCIAIS */
 
@@ -1304,7 +1280,7 @@ body {
 }
 
 .textoRodape {
-    color: rgb(255, 0, 255);
+    color: rgb(255, 255, 255);
     font-size: 10pt;
     cursor: pointer;
     margin-top: 3%;
@@ -1312,5 +1288,9 @@ body {
 
 .textoRodape:hover {
     color: #060058;
+}
+
+.tituloRodape{
+    color: rgb(255, 0, 255);
 }
 /* TEXTO DO RODAPE */
