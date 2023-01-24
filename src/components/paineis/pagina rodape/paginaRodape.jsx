@@ -43,18 +43,32 @@ function PaginaRodape() {
                 <a class="redesSocias" href ="https://br.linkedin.com/" target="blank"><ion-icon class="iconRedeSocial" name="logo-linkedin"></ion-icon> </a>
             </div>
               
-            <div>
+            <div id="institucionalRodape">
+                <h1 class="tituloRodape">Institucional</h1> 
                 
+                <p class="textoRodape">Trabalhe Conosco</p>
+
+                <p class="textoRodape">Aplicativos</p>
+
+                <p class="textoRodape">Canal De Ouvidoria</p>
+
+                <p class="textoRodape">Venda No Marketplace</p>
+            </div>
+
+            <div id="privacidadeRodape">
+                <h1 class="tituloRodape">Privacidade</h1> 
                 
-                <h1>Institucional</h1> 
-                
-                <p>Trabalhe Conosco</p>
+                <p class="textoRodape">Política De Cookies</p>
 
-                <p>Aplicativos</p>
+                <p class="textoRodape">Política De Privacidade</p>
 
-                <p>Canal De Ouvidoria</p>
+                <p class="textoRodape">Termos De Uso</p>
 
-                <p>Venda No Marketplace</p>
+                <p class="textoRodape">Portal De Privacidade (LGPD)</p>
+
+                <p class="textoRodape">FAQ</p>
+
+                <p class="textoRodape">Configuração De Cookie</p>
             </div>
 
         </div>
