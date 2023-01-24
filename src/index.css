@@ -476,6 +476,10 @@ body {
 #corpo2{
   display: none;
 }
+
+#loginSenhaErrada {
+    color: red;
+}
 /* CSS FORMULARIO (EDUARDA) */
 
 
@@ -1244,8 +1248,11 @@ body {
     padding-top: 30%;
     padding-bottom: 0;
     box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
-    margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;
+    margin-top: 0.6em;
+    margin-bottom: 4.9em;
+    overflow: hidden;
+    border-radius: 8px;
+    will-change: transform;
 }
 
 .canva2{
@@ -1264,14 +1271,46 @@ body {
 
 /* BOTOES REDE SOCIAIS */
 .redesSocias {
-    background-color: #00b100;
     width: 0;
     height: 0;
-    margin: 2%;
+    margin: 0% 1% 0% 2%;
 }
 
 .iconRedeSocial {
     width: 50px;
     height: 50px;
+    background-color: #b8b8b8;
+    border-radius: 20%;
+    color: rgb(255, 0, 255);
+}
+
+.iconRedeSocial:hover {
+    background-color: #505050;
+    box-shadow: 7px 2px #011015;
 }
 /* BOTOES REDE SOCIAIS */
+
+/* TEXTO DO RODAPE */
+#institucionalRodape {
+    position: absolute;
+    left: 47%;
+    top: 15%;
+}
+
+#privacidadeRodape {
+    position: absolute;
+    left: 47%;
+    top: 70%;
+}
+
+.textoRodape {
+    color: rgb(255, 0, 255);
+    font-size: 10pt;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.textoRodape:hover {
+    color: #060058;
+}
+/* TEXTO DO RODAPE */
