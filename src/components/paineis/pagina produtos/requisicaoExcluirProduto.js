@@ -1,4 +1,5 @@
 import url from "../../url"
+import login from "../pagina login/requisicaoLogin"
 
 function excluirProduto() {
     let usuario = document.getElementById('loginome').value
@@ -16,7 +17,7 @@ function excluirProduto() {
             produtos.splice(numeroDoCard, 1)
     
             axios.put(url + 'dados/' + user, {id: user, produtos})
-            .then(resposta => alert('item excluido'))
+            .then(resposta => login())
             .catch(erro => alert('nao faz sentido'))
         })
         .catch(erro => alert(erro))

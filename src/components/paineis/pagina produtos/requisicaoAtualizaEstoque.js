@@ -1,4 +1,5 @@
 import url from "../../url"
+import login from "../pagina login/requisicaoLogin"
 
 
 async function atualizarEstoque() {
@@ -32,7 +33,7 @@ async function atualizarEstoque() {
             }
 
             axios.put(url + 'dados/' + userId, arrayFinal)
-            .then(resposta => alert('estoque atualizado'))
+            .then(resposta => login())
             .catch(erro => alert('nao faz sentido'))
         })
         .catch(erro => alert('ta aki'))
