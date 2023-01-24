@@ -1,4 +1,5 @@
 import url from "../../url";
+import login from "../pagina login/requisicaoLogin";
 
 
 async function adicionarProduto() {
@@ -24,7 +25,7 @@ async function adicionarProduto() {
                         }
 
             axios.put(url + 'dados/' + user, arrayFinal)
-            .then(resposta => alert('item adicionado'))
+            .then(resposta => login())
             .catch(erro => alert('nao faz sentido'))
         })
         .catch(erro => alert(erro))
