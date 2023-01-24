@@ -615,11 +615,6 @@ body {
     animation-delay: -3s;
 }
 
-/* .text{           A EDUARDA COLOCOU ESSE CODIGO SO PRA FUDE COM O TRABALHO KKK
-    color: rgb(71, 6, 44);
-    font-size: 500px;
-} */
-
 .form2 {
     color: #45f3ff;
     position: absolute;
@@ -807,7 +802,6 @@ body {
  }
 
  .containerProdutos .cardProdutos .face.face1 .content {
-     opacity: 0.2;
      transition: 0.5s;
  }
 
