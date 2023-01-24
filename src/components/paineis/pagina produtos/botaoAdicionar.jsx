@@ -15,7 +15,7 @@ function BotaoAdicionar() {
 
                 <div>
 
-                    <h1>Adicionar Produtos</h1>
+                    <h1>Atualizar estoque</h1>
 
                     <div>
                         <span class="moverSpan">Numero do card com novo estoque:</span>
