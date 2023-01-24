@@ -1,3 +1,3 @@
-const url = 'https://server-estoque-saude.onrender.com/'
+const url = 'https://servidor-vite.onrender.com'
 
 export default url
