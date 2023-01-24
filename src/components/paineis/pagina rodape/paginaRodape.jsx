@@ -1,3 +1,5 @@
+import feedback from "./requisicaoFeedback"
+
 function PaginaRodape() {
 
     return (
@@ -17,9 +19,11 @@ function PaginaRodape() {
                         <div class="inputBox">
                             <textarea placeholder="digite sua mensagem..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button  class="botão3" >
+                        <button  class="botão3" onClick={() => feedback()}>
                         Enviar
                         </button>
+
+                        <p id="feedbackEnviado"></p>
                     </div>
                 </div>
             </div>
