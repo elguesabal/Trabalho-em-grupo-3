@@ -32,6 +32,9 @@
  
  ![produtos1](https://user-images.githubusercontent.com/114102116/214969587-309e2d84-8a9c-4833-a30c-c05de433a150.png)
  
+ <p>Link de uma breve demonstração no YouTube: https://youtu.be/v-lhzCvlOSI</p>
+ 
+ 
  <h2>💻 Ferramentas utilizadas</h2>
  
  <li>React</li>
