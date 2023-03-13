@@ -8,7 +8,9 @@
 
 - Criamos um site de uma empresa fictícia chamada Estoque Saúde+, onde empresas farmacêuticas podem colocar e organizar seu estoque de forma simples e gratuita.
 
--  Como acessar nosso projeto: primeiro você deve baixar o arquivo, dentro do VsCode deve abrir o terminal, e logo após dar o comando <strong>npm install</strong> e quando concluir, dar outro comando chamado <strong>npm run dev</strong>.
+- Como acessar nosso projeto: primeiro você deve baixar o arquivo, dentro do VsCode deve abrir o terminal, e logo após dar o comando <strong>npm install</strong> e quando concluir, dar outro comando chamado <strong>npm run dev</strong>.
+
+- Pode acessar também através deste link: https://estoquesaude.vercel.app/
 
 
 <br>
